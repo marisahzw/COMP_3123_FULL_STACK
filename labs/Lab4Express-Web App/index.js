@@ -8,6 +8,9 @@ app.get('/hello', (req, res) => {
     res.send('Hello Express JS');
   });
 
+
+  
+//QUERY PARAMETER
   app.get('/user', (req, res) => {
     const firstname = req.query.firstname || 'Tafadzwa';
     const lastname = req.query.lastname || 'Marisa';
@@ -16,14 +19,11 @@ app.get('/hello', (req, res) => {
   });
   
   
-  app.post('/user', (req, res) => {
+  //PATH PARAMETER
+  app.post('/user/:Firstname/:lastname', (req, res) => {
+    const{firstname, lastname} = req.params
+    res.send(`Firstname is ${firstname} Last name is ${lastname}`)
 
-    const person ={
-      firstname: "Tafadzwa",
-      lastname: "Marisa"
-    }
-
-    res.send(person)
 });
   
 
