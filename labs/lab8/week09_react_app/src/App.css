@@ -1,0 +1,101 @@
+/* App.css */
+
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+div {
+  max-width: 700px;
+  margin: auto;
+  padding: 5px;
+ 
+  border-radius: 8px;
+  
+}
+.container1{
+  border: 5px solid rgba(4, 71, 2, 1);
+  background-color: whitesmoke;
+ 
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-container label{
+  align-items: center;
+  text-align: center;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+
+.input-container > div {
+  flex: 1;
+}
+
+.input-container > label,
+.input-container > input,
+.input-container > select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-container{
+  width: 12%;
+}
+.checkbox-container {
+  margin-left: 30%;
+  display: inline flex;
+  align-items: center; 
+}
+
+.checkbox-container input {
+  margin-right: 1px;
+  margin: 3px;
+}
+.checkbox input{
+  width: 50%;
+  
+}
+
+.submitted-data-container{
+  border: 5px solid rgba(4, 71, 2, 1);
+  background-color: whitesmoke;
+}
+
+.submitted-data-container h2{
+  color: black;
+  font-size: 30px;
+text-align: center;
+}
+
+
+
+
